@@ -112,7 +112,7 @@ body {
 .form-submit a {
   text-decoration: none;
   color: #596d48;
-  font-weight: ;
+  font-weight: 600;
 }
 
 .form-input-container {
@@ -141,6 +141,18 @@ body {
 
 .form-input-container div input:focus {
   filter: drop-shadow(1px 3px 3px lightgray);
+  border: 0.5px solid blue;
+  outline: none;
+}
+
+.form-input-container div .error {
+  outline: none;
+  border: 1px solid darkred;
+}
+
+.error-msg {
+  color: darkred;
+  font-size: 0.8rem;
 }
 
 .submit-btn {
