@@ -29,7 +29,7 @@ body {
 
 .hero {
   width: 40vw;
-  max-width: 50vh;
+  max-width: 65vh;
   background-image: url("leaves.jpg");
   background-size: cover;
   display: flex;
@@ -46,7 +46,7 @@ body {
   font-size: 5rem;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .img-credit {
@@ -54,26 +54,48 @@ body {
   text-align: center;
   font-size: 0.8rem;
   margin-top: auto;
-  padding-bottom: 1rem;
-}
-
-.main-container div {
-  border: 1px solid black;
+  padding-bottom: 2rem;
 }
 
 .form-container {
+  display: flex;
   flex: auto;
+  max-width: 650px;
   flex-direction: column;
 }
 
+.form-header-wrapper {
+  width: 100vw;
+  flex: 2 0 0;
+  background-color: rgba(249, 250, 251);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrapper {
+  width: 100vw;
+  flex: 1;
+  background-color: white;
+  filter: drop-shadow(5px 10px 10px lightgray);
+}
+
+.form-submit-wrapper {
+  width: 100vw;
+  flex: 3;
+  background-color: rgba(249, 250, 251);
+}
+
 .form-header {
+  max-width: 650px;
   padding-left: 3rem;
-  flex: 1 1 0;
+  margin-top: auto;
+  margin-bottom: 3rem;
 }
 
 .form {
+  max-width: 650px;
   padding-left: 3rem;
-  flex: 1 1 0;
+  padding-top: 1rem;
 }
 
 .form label {
@@ -81,6 +103,55 @@ body {
 }
 
 .form-submit {
+  padding-top: 3rem;
   padding-left: 3rem;
-  flex: 1 1 0;
+  max-width: 650px;
 }
+
+.form-submit a {
+  text-decoration: none;
+  color: #596d48;
+}
+
+.form-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 1rem;
+}
+
+.form-input-container div {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.form-input-container div label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.form-input-container div input {
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 0.3rem;
+  margin-top: 2px;
+}
+
+.form-input-container div input:focus {
+  filter: drop-shadow(1px 3px 3px lightgray);
+}
+
+.submit-btn {
+  background-color: #596d48;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  filter: drop-shadow(1px 3px 3px lightgray);
+  margin-bottom: 2rem;
+}
+
+/* .main-container div {
+  border: 1px solid black;
+} */
