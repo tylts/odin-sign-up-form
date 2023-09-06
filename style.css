@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+}
+
+@font-face {
+  font-family: "norse";
+  src: url("./Norse-Bold.otf") format("woff");
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.odin-logo {
+  max-width: 5rem;
+}
+
+.hero {
+  width: 40vw;
+  max-width: 50vh;
+  background-image: url("leaves.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-family: "norse", Courier, monospace;
+  color: white;
+  font-weight: normal;
+  margin-top: 18vh;
+  padding: 0.5rem 0;
+  display: flex;
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.img-credit {
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: auto;
+  padding-bottom: 1rem;
+}
+
+.main-container div {
+  border: 1px solid black;
+}
+
+.form-container {
+  flex: auto;
+  flex-direction: column;
+}
+
+.form-header {
+  padding-left: 3rem;
+  flex: 1 1 0;
+}
+
+.form {
+  padding-left: 3rem;
+  flex: 1 1 0;
+}
+
+.form label {
+  display: grid;
+}
+
+.form-submit {
+  padding-left: 3rem;
+  flex: 1 1 0;
+}
